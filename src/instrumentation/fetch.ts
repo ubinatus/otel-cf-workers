@@ -238,5 +238,5 @@ export function instrumentClientFetch(
 }
 
 export function instrumentGlobalFetch(): void {
-	globalThis.fetch = instrumentClientFetch(globalThis.fetch, (config) => config.fetch)
+	// globalThis.fetch = instrumentClientFetch(globalThis.fetch, (config) => config.fetch)
 }
